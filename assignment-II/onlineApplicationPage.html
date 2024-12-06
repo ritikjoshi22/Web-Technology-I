@@ -1,35 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Application Portal</title>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Application Portal - Nepal Electricity Authority</title>
+  </head>
+  <body>
     <div>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img
-          src="./images/logo.png"
-          alt=""
-        /><br /><br /><br />
-        <nav>
-          <hr />
-          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|&emsp;<a
-            href="index.html"
-            >HomePage</a
-          >&emsp;|&emsp; <a href="aboutUs.html">About Us</a>&emsp;|&emsp;
-          <a href="consumerPage.html">Consumers</a>&emsp;|&emsp;
-          <a href="onlineApplicationPage.html">Online Application</a>&emsp;|&emsp;
-          <a href="contactUs.html">Contact Us</a>&emsp;|
-          <hr />
-        </nav>
-        <h1>Online Application Portal</h1>
-        <footer>
-            <hr />
-            <p>
-              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Copyright
-              © 2024 Nepal Electricity Authority ❘ All Rights Reserved.
-            </p>
-          </footer>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img
+        src="./images/logo.png"
+        alt=""
+      /><br /><br /><br />
+      <nav>
+        <hr />
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|&emsp;<a
+          href="index.html"
+          >HomePage</a
+        >&emsp;|&emsp; <a href="aboutUs.html">About Us</a>&emsp;|&emsp;
+        <a href="consumerPage.html">Consumers</a>&emsp;|&emsp;
+        <a href="onlineApplicationPage.html">Online Application</a>&emsp;|&emsp;
+        <a href="contactUs.html">Contact Us</a>&emsp;|
+        <hr />
+      </nav>
+      <div>
+    <h1 align="center">Online Application Portal</h3>
+    <p align="center"><strong>Fill out the form below to apply:</strong></p>
+
+    <table border="0" align="center" cellpadding="5">
+      <tr>
+        <td><strong>Full Name:</strong></td>
+        <td><input type="text" placeholder="Enter your full name" /></td>
+      </tr>
+      <tr>
+        <td><strong>Email Address:</strong></td>
+        <td><input type="email" placeholder="Enter your email" /></td>
+      </tr>
+      <tr>
+        <td><strong>Phone Number:</strong></td>
+        <td><input type="tel" placeholder="Enter your phone number" /></td>
+      </tr>
+      <tr>
+        <td><strong>NEA Location:</strong></td>
+        <td>
+          <select>
+            <option>SELECT...</option>
+            <option>Kathmandu</option>
+            <option>Pokhara</option>
+            <option>Lalitpur</option>
+            <option>Biratnagar</option>
+            <option>Bharatpur</option>
+            <!-- Add other cities of Nepal -->
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Consumer ID:</strong></td>
+        <td><input type="text" placeholder="Enter your Consumer ID" /></td>
+      </tr>
+      <tr>
+        <td><strong>Application Type:</strong></td>
+        <td>
+          <input type="radio" name="applicationType" value="New Connection" />
+          New Connection<br />
+          <input type="radio" name="applicationType" value="Service Upgrade" />
+          Service Upgrade<br />
+          <input type="radio" name="applicationType" value="Complaint" />
+          Complaint
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Comments/Remarks:</strong></td>
+        <td>
+          <textarea
+            placeholder="Write your comments here..."
+            rows="4"
+            cols="30"
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Submit Application</button>
+          <button type="reset">Reset Form</button>
+        </td>
+      </tr>
+    </table>
+      </div>
+      <footer>
+        <hr />
+        <p>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Copyright
+          © 2024 Nepal Electricity Authority ❘ All Rights Reserved.
+        </p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
