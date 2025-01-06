@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
-  <div>
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img
-      src="./images/logo.png"
-      alt=""
-    /><br /><br /><br />
-    <nav>
-      <hr />
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|&emsp;<a
-        href="index.html"
-        >HomePage</a
-      >&emsp;|&emsp; <a href="aboutUs.html">About Us</a>&emsp;|&emsp;
-      <a href="consumerPage.html">Consumers</a>&emsp;|&emsp;
-      <a href="onlineApplicationPage.html">Online Application</a>&emsp;|&emsp;
-      <a href="contactUs.html">Contact Us</a>&emsp;|
-      <hr />
-    </nav>
-    <img src="images/contactUs.png" width="100%" height="300px" alt="">
-    <p align="center"><strong>We are here to assist you. Please fill out the form below to get in touch:</strong></p>
-
-    <table border="0" align="center" cellpadding="5">
+  <div class="container">
+    <header>
+        <img src="./images/logo.png" alt="Logo" height="50" />
+        <nav>
+          <a href="index.html">HomePage</a>
+          <a href="aboutUs.html">About Us</a>
+          <a href="consumerPage.html">Consumers</a>
+          <a href="onlineApplicationPage.html">Online Application</a>
+          <a href="contactUs.html">Contact Us</a>
+        </nav>
+      </header>
+    <img src="images/contactUs.png" width="100%" height="300px" alt="Contact Us Banner">
+    <div class="form-container">
+      <div class="form-wrapper">
+        <h1>Contact Us</h1>
+        <p><strong>We are here to assist you. Please fill out the form below to get in touch:</strong></p>
+        <form>
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <label for="reason">Reason for Contact</label>
+            <select id="reason" name="reason">
+              <option value="">SELECT...</option>
+              <option value="billing">Billing Inquiry</option>
+              <option value="technical">Technical Support</option>
+              <option value="connection">New Connection</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." rows="5"></textarea>
+          </div>
+          <div class="form-buttons">
+            <button type="submit">Send Message</button>
+            <button type="reset">Reset Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h3>Our Contact Details</h3>
+      <table>
         <tr>
-            <td><strong>Full Name:</strong></td>
-            <td><input type="text" placeholder="Enter your full name"></td>
+          <td>Head Office:</td>
+          <td>Kathmandu, Nepal</td>
         </tr>
         <tr>
-            <td><strong>Email Address:</strong></td>
-            <td><input type="email" placeholder="Enter your email"></td>
+          <td>Phone:</td>
+          <td>123-456-7890</td>
         </tr>
         <tr>
-            <td><strong>Phone Number:</strong></td>
-            <td><input type="tel" placeholder="Enter your phone number"></td>
+          <td>Email:</td>
+          <td>support@nea.gov.np</td>
         </tr>
         <tr>
-            <td><strong>Reason for Contact:</strong></td>
-            <td>
-                <select>
-                    <option>SELECT...</option>
-                    <option>Billing Inquiry</option>
-                    <option>Technical Support</option>
-                    <option>New Connection</option>
-                    <option>Feedback</option>
-                    <option>Other</option>
-                </select>
-            </td>
+          <td>Website:</td>
+          <td><a href="https://www.nea.org.np" target="_blank">www.nea.org.np</a></td>
         </tr>
-        <tr>
-            <td><strong>Message:</strong></td>
-            <td><textarea placeholder="Write your message here..." rows="5" cols="30"></textarea></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <button type="submit">Send Message</button>
-                <button type="reset">Reset Form</button>
-            </td>
-        </tr>
-    </table>
-
-    <h3 align="center">Our Contact Details</h3>
-    <table border="0" align="center" cellpadding="5">
-        <tr>
-            <td><strong>Head Office:</strong></td>
-            <td>Kathmandu, Nepal</td>
-        </tr>
-        <tr>
-            <td><strong>Phone:</strong></td>
-            <td>123-456-7890</td>
-        </tr>
-        <tr>
-            <td><strong>Email:</strong></td>
-            <td>support@nea.gov.np</td>
-        </tr>
-        <tr>
-            <td><strong>Website:</strong></td>
-            <td><a href="https://www.nea.org.np" target="_blank">www.nea.org.np</a></td>
-        </tr>
-    </table>
-
-    <p align="center">We value your feedback and inquiries. Thank you for reaching out to us!</p>
+      </table>
+    </div>
     <footer>
-      <hr />
-      <p>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Copyright
-        © 2024 Nepal Electricity Authority ❘ All Rights Reserved.
-      </p>
-    </footer>    
-</div>
+      <p>&copy; 2024 Nepal Electricity Authority ❘ All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>

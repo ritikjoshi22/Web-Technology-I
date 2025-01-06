@@ -4,93 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Application Portal - Nepal Electricity Authority</title>
+    <link rel="stylesheet" href="./styles/onlineApplication.css" />
   </head>
   <body>
-    <div>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img
-        src="./images/logo.png"
-        alt=""
-      /><br /><br /><br />
-      <nav>
-        <hr />
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|&emsp;<a
-          href="index.html"
-          >HomePage</a
-        >&emsp;|&emsp; <a href="aboutUs.html">About Us</a>&emsp;|&emsp;
-        <a href="consumerPage.html">Consumers</a>&emsp;|&emsp;
-        <a href="onlineApplicationPage.html">Online Application</a>&emsp;|&emsp;
-        <a href="contactUs.html">Contact Us</a>&emsp;|
-        <hr />
-      </nav>
-      <div>
-    <h1 align="center">Online Application Portal</h3>
-    <p align="center"><strong>Fill out the form below to apply:</strong></p>
-
-    <table border="0" align="center" cellpadding="5">
-      <tr>
-        <td><strong>Full Name:</strong></td>
-        <td><input type="text" placeholder="Enter your full name" /></td>
-      </tr>
-      <tr>
-        <td><strong>Email Address:</strong></td>
-        <td><input type="email" placeholder="Enter your email" /></td>
-      </tr>
-      <tr>
-        <td><strong>Phone Number:</strong></td>
-        <td><input type="tel" placeholder="Enter your phone number" /></td>
-      </tr>
-      <tr>
-        <td><strong>NEA Location:</strong></td>
-        <td>
-          <select>
-            <option>SELECT...</option>
-            <option>Kathmandu</option>
-            <option>Pokhara</option>
-            <option>Lalitpur</option>
-            <option>Biratnagar</option>
-            <option>Bharatpur</option>
-            <!-- Add other cities of Nepal -->
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td><strong>Consumer ID:</strong></td>
-        <td><input type="text" placeholder="Enter your Consumer ID" /></td>
-      </tr>
-      <tr>
-        <td><strong>Application Type:</strong></td>
-        <td>
-          <input type="radio" name="applicationType" value="New Connection" />
-          New Connection<br />
-          <input type="radio" name="applicationType" value="Service Upgrade" />
-          Service Upgrade<br />
-          <input type="radio" name="applicationType" value="Complaint" />
-          Complaint
-        </td>
-      </tr>
-      <tr>
-        <td><strong>Comments/Remarks:</strong></td>
-        <td>
-          <textarea
-            placeholder="Write your comments here..."
-            rows="4"
-            cols="30"
-          ></textarea>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" align="center">
-          <button type="submit">Submit Application</button>
-          <button type="reset">Reset Form</button>
-        </td>
-      </tr>
-    </table>
+    <div class="container">
+      <header>
+        <img src="./images/logo.png" alt="Logo" height="50" />
+        <nav>
+          <a href="index.html">HomePage</a>
+          <a href="aboutUs.html">About Us</a>
+          <a href="consumerPage.html">Consumers</a>
+          <a href="onlineApplicationPage.html">Online Application</a>
+          <a href="contactUs.html">Contact Us</a>
+        </nav>
+      </header>
+      <div class="form-container">
+        <div class="form-wrapper">
+          <h1>Online Application Portal</h1>
+          <p><strong>Fill out the form below to apply:</strong></p>
+          <form>
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Enter your full name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="nea-location">NEA Location</label>
+              <select id="nea-location" name="nea-location">
+                <option value="">SELECT...</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Pokhara">Pokhara</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Biratnagar">Biratnagar</option>
+                <option value="Bharatpur">Bharatpur</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="consumer-id">Consumer ID</label>
+              <input
+                type="text"
+                id="consumer-id"
+                name="consumer-id"
+                placeholder="Enter your Consumer ID"
+              />
+            </div>
+            <div class="form-radio">
+              <label for="application-type">Application Type</label>
+              <div class="btnRadio">
+                <div>
+                  <input
+                    type="radio"
+                    id="new-connection"
+                    name="application-type"
+                    value="New Connection"
+                  />
+                  <label for="new-connection">New Connection</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="service-upgrade"
+                    name="application-type"
+                    value="Service Upgrade"
+                  />
+                  <label for="service-upgrade">Service Upgrade</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="complaint"
+                    name="application-type"
+                    value="Complaint"
+                  />
+                  <label for="complaint">Complaint</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="comments">Comments/Remarks</label>
+              <textarea
+                id="comments"
+                name="comments"
+                placeholder="Write your comments here..."
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="form-buttons">
+              <button type="submit">Submit Application</button>
+              <button type="reset">Reset Form</button>
+            </div>
+          </form>
+        </div>
       </div>
       <footer>
         <hr />
-        <p>
-          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Copyright
-          © 2024 Nepal Electricity Authority ❘ All Rights Reserved.
+        <p style="text-align: center">
+          Copyright © 2024 Nepal Electricity Authority ❘ All Rights Reserved.
         </p>
       </footer>
     </div>

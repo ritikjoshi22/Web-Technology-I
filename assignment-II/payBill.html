@@ -3,54 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomePage</title>
+    <title>Pay Bill</title>
+    <link rel="stylesheet" href="./styles/paybill.css">
   </head>
   <body>
-    <div>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img
-        src="./images/logo.png"
-        alt=""
-      /><br /><br /><br />
-      <nav>
-        <hr />
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|&emsp;<a
-          href="index.html"
-          >HomePage</a
-        >&emsp;|&emsp; <a href="aboutUs.html">About Us</a>&emsp;|&emsp;
-        <a href="consumerPage.html">Consumers</a>&emsp;|&emsp;
-        <a href="onlineApplicationPage.html">Online Application</a>&emsp;|&emsp;
-        <a href="contactUs.html">Contact Us</a>&emsp;|
-        <hr />
-      </nav>
-      <div>
-        <img src="images/payBill.png" alt="">
-        <hr>
-        <br><br><br><br>
-        <table cellspacing="100">
-            <caption><strong>ONLINE PAYMENTS
-            </strong></caption>
-            <tr>
-                <td><img height="63px" width="230px" src="images/esewa1.jpg" alt=""></td>
-                <td><img height="69px" width="350px" src="images/mahalaxmi.png" alt=""></td>
-                <td><img height="56px" width="350px" src="images/nibl.jpg" alt=""></td>
-            </tr>
-            <tr>
-                <td><img height="64px" width="350px" src="images/prabhu.gif" alt=""></td>
-                <td><img height="54px" width="350px" src="images/himalayan.png" alt=""></td>
-                <td><img height="135px" width="350px" src="images/khalti.png" alt=""></td>
-            </tr>
-            <tr>
-                <td><img height="150px" width="350px" src="images/imepay.png" alt=""></td>
-                <td><img height="112px" width="350px" src="images/cellpay.png" alt=""></td>
-            </tr>
-        </table>
+    <div class="container">
+      <header>
+        <img src="./images/logo.png" alt="Logo" height="50" />
+        <nav>
+          <a href="index.html">HomePage</a>
+          <a href="aboutUs.html">About Us</a>
+          <a href="consumerPage.html">Consumers</a>
+          <a href="onlineApplicationPage.html">Online Application</a>
+          <a href="contactUs.html">Contact Us</a>
+        </nav>
+      </header>
+      <div class="content">
+        <img src="images/payBill.png" alt="Pay Bill Banner" />
+        <h1>ONLINE PAYMENTS</h1>
+        <div class="payment-grid">
+          <!-- ESEWA -->
+          <div class="payment-card">
+            <img src="images/esewa1.jpg" alt="ESEWA" />
+            <h3>ESEWA</h3>
+          </div>
+          <!-- Mahalaxmi -->
+          <div class="payment-card">
+            <img src="images/mahalaxmi.png" alt="Mahalaxmi Bank" />
+            <h3>Mahalaxmi Bank</h3>
+          </div>
+          <!-- NIBL -->
+          <div class="payment-card">
+            <img src="images/nibl.jpg" alt="NIBL" />
+            <h3>NIBL</h3>
+          </div>
+          <!-- Prabhu -->
+          <div class="payment-card">
+            <img src="images/prabhu.gif" alt="Prabhu" />
+            <h3>Prabhu</h3>
+          </div>
+          <!-- Himalayan -->
+          <div class="payment-card">
+            <img src="images/himalayan.png" alt="Himalayan Bank" />
+            <h3>Himalayan Bank</h3>
+          </div>
+          <!-- Khalti -->
+          <div class="payment-card">
+            <img src="images/khalti.png" alt="Khalti" />
+            <h3>Khalti</h3>
+          </div>
+          <!-- IMEPay -->
+          <div class="payment-card">
+            <img src="images/imepay.png" alt="IMEPay" />
+            <h3>IMEPay</h3>
+          </div>
+          <!-- CellPay -->
+          <div class="payment-card">
+            <img src="images/cellpay.png" alt="CellPay" />
+            <h3>CellPay</h3>
+          </div>
+        </div>
       </div>
       <footer>
-        <hr />
-        <p>
-          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Copyright
-          © 2024 Nepal Electricity Authority ❘ All Rights Reserved.
-        </p>
+        <p>&copy; 2024 Nepal Electricity Authority ❘ All Rights Reserved.</p>
       </footer>
     </div>
   </body>
