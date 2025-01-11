@@ -310,7 +310,7 @@ body {
  
   .card-container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
     gap: 50px;
     margin: 2rem 0;
     justify-content: center;
@@ -318,7 +318,8 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .card-main{
+  
+  .card-main {
     display: flex;
     flex-direction: column;
     margin-top: 120px;
@@ -326,9 +327,10 @@ body {
     justify-content: center;
     align-items: center;
   }
+  
   .card {
     height: auto;
-    width: auto;
+    width: 300px; /* Fixed width for consistent sizing */
     background: white;
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -337,16 +339,80 @@ body {
     text-align: center;
     transition: all 0.3s ease;
   }
+  
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
+  
   .card img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin-bottom: 1rem;
   }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: gray;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      gap: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .card {
+      width: 90%; /* Take most of the screen width for better visibility */
+      padding: 1rem;
+    }
+  
+    .card img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .card h3 {
+      font-size: 1rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-container {
+      gap: 10px;
+    }
+  
+    .card {
+      width: 100%; /* Full width on very small screens */
+    }
+  
+    .card img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .card h3 {
+      font-size: 0.9rem;
+    }
+  
+    .card p {
+      font-size: 0.8rem;
+    }
+  }
+  
   .grid-container {
     padding: 0 20px 0 50px;
     display: flex;

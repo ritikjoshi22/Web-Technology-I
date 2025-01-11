@@ -13,20 +13,65 @@ body {
   }
 
   .container {
-    max-width: 1300px;
     margin: 0 auto;
-    padding: 0 20px;
   }
   header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    justify-content: space-between;
+    background-color: #2D79BD;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  nav a {
-    margin-left: 1rem;
+  
+  header img {
+    height: 50px;
+    background-color: white;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
     text-decoration: none;
-    color: #333;
+    color: #ecf0f1;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #f39c12;
+  }
+  
+  header nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #f39c12;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease;
+  }
+  
+  header nav a:hover::after {
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header nav {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   .form-wrapper {
