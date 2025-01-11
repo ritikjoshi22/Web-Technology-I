@@ -330,7 +330,6 @@ body {
   
   .card {
     height: auto;
-    width: 300px; /* Fixed width for consistent sizing */
     background: white;
     backdrop-filter: blur(10px);
     border-radius: 10px;
