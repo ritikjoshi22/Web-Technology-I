@@ -1,15 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
     margin: 0;
     padding: 0;
-    background-color: rgb(239, 239, 244);
+    background-color: #f8f9fa;
   }
   .container {
     margin: 0 auto;
@@ -116,7 +109,7 @@ body {
   
   .table-header {
     display: flex;
-    background-color: black;
+    background-color: rgb(57, 37, 37);
     color: white;
     font-weight: bold;
     padding: 10px 0;
@@ -148,12 +141,12 @@ body {
     background-color: #e8e8e8;
   }
   
-  a {
+  .publications a {
     color: #007bff;
     text-decoration: none;
   }
   
-  a:hover {
+  .publications a:hover {
     text-decoration: underline;
   }
 

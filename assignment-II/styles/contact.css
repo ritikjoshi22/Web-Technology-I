@@ -197,6 +197,30 @@ body {
     width: 40%;
   }
   
+  .links{
+    padding: 0 100px 0 0;
+  }
+  .quick-links a {
+    display: block;
+    padding: 0.5rem;
+    background-color: #e6f2ff;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+  .quick-links a:hover {
+    background-color: #cce5ff;
+  }
+  .publications{
+    padding: 0 0 0 50px;
+  }
+  .publications a {
+    color: blue;
+  }
+  .publications a:hover {
+    text-decoration: underline;
+  }
   footer {
     background-color: white;
     padding: 1rem;
@@ -205,4 +229,33 @@ body {
   footer p{
     color: black;
     text-align: center;
+  }
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    .stats {
+      position: static;
+      margin-top: 1rem;
+    }
+  }
+
+  .grid-container .News,.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerCon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .publications a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .publications a:hover {
+    text-decoration: underline;
   }
